@@ -9,8 +9,7 @@
       本应用已整合为单文件结构。
       所有游戏逻辑、样式及交互均在此 HTML 中实现。
     -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script>-->
     <script>
         tailwind.config = {
             theme: {
@@ -235,7 +234,7 @@
 
                 <div id="screen-paused" class="hidden absolute inset-0 bg-black/50 flex flex-col items-center justify-center z-20 backdrop-blur-[1px]">
                     <div class="size-14 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50">
-                        <span class="material-symbols-outlined text-primary text-4xl">pause</span>
+                        <span class="material-symbols-outlined text-primary text-4xl">暂停</span>
                     </div>
                 </div>
             </div>
@@ -249,22 +248,22 @@
                 <div class="dpad-center"></div>
                 <div class="col-start-2">
                     <button id="ctrl-up" class="physical-button size-11 rounded-t-lg">
-                        <span class="material-symbols-outlined">expand_less</span>
+                        <span class="material-symbols-outlined">上</span>
                     </button>
                 </div>
                 <div class="col-start-1 row-start-2">
                     <button id="ctrl-left" class="physical-button size-11 rounded-l-lg">
-                        <span class="material-symbols-outlined">chevron_left</span>
+                        <span class="material-symbols-outlined">左</span>
                     </button>
                 </div>
                 <div class="col-start-2 row-start-2">
                     <button id="ctrl-down" class="physical-button size-11">
-                        <span class="material-symbols-outlined">expand_more</span>
+                        <span class="material-symbols-outlined">下</span>
                     </button>
                 </div>
                 <div class="col-start-3 row-start-2">
                     <button id="ctrl-right" class="physical-button size-11 rounded-r-lg">
-                        <span class="material-symbols-outlined">chevron_right</span>
+                        <span class="material-symbols-outlined">右</span>
                     </button>
                 </div>
             </div>
@@ -275,13 +274,13 @@
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-[6px] font-bold text-white/20 uppercase tracking-tighter">暂停</span>
                         <button id="btn-play-toggle" class="physical-button size-10 rounded-full">
-                            <span id="play-icon" class="material-symbols-outlined text-sm">play_arrow</span>
+                            <span id="play-icon" class="material-symbols-outlined text-sm">播放箭头</span>
                         </button>
-                    </div>
+                    </div>           
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-[6px] font-bold text-white/20 uppercase tracking-tighter">重置</span>
                         <button id="btn-refresh" class="physical-button size-10 rounded-full">
-                            <span class="material-symbols-outlined text-sm">refresh</span>
+                            <span class="material-symbols-outlined text-sm">刷新</span>
                         </button>
                     </div>
                 </div>
@@ -545,7 +544,7 @@
             document.getElementById('screen-gameover').classList.toggle('hidden', gameState.status !== 'GAMEOVER');
             document.getElementById('screen-paused').classList.toggle('hidden', gameState.status !== 'PAUSED');
             document.getElementById('final-score').innerText = gameState.score;
-            document.getElementById('play-icon').innerText = gameState.status === 'PLAYING' ? 'pause' : 'play_arrow';
+            document.getElementById('play-icon').innerText = gameState.status === 'PLAYING' ? '暂停' : '播放箭头';
         }
 
         /**
