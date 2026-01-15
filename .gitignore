@@ -12,6 +12,8 @@ Thumbs.db
 # IDEs and editors
 .vscode/
 .idea/
+.tsx
+.json
 *.swp
 *.swo
 
