@@ -1,11 +1,37 @@
-<div align="center">
+# 霓虹俄罗斯方块：动态矩阵 (Neon Tetris: Dynamic Matrix)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+一款具有复古未来感赛博朋克风格的俄罗斯方块游戏，专为追求视觉体验和操作手感的玩家设计。
 
-  <h1>Built with AI Studio</h2>
+## ✨ 特性
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **赛博美学**：高对比度的霓虹色彩，模拟 CRT 扫描线效果及动态矩阵背景。
+- **掌机体验**：沉浸式 3D 掌机外壳 UI 设计，适配物理按键手感。
+- **高度适配**：竖屏模式下优化高度（缩小约 90px），适配移动端。
+- **性能卓越**：基于原生 Canvas 渲染，确保在各种设备上都能保持 60FPS 的丝滑流畅。
+- **物理反馈**：模拟 3D 按键点击效果，提供清晰的操作视觉反馈。
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🕹️ 操作指南
 
-</div>
+### 键盘 (PC)
+- `↑` / `W`: 旋转方块
+- `←` / `A`: 向左移动
+- `→` / `D`: 向右移动
+- `↓` / `S`: 加速下落
+- `空格 (Space)`: 直接坠落 (Hard Drop)
+- `P` / `Esc`: 暂停/继续
+
+### 触控 (移动端)
+- 使用屏幕下方的 **方向键 (D-Pad)** 进行控制。
+- 使用 **执行程序 (EXECUTE)** 按钮直接下坠。
+- 点击 **暂停/重置** 按钮管理系统状态。
+
+## 🛠️ 技术栈
+- HTML5 Canvas
+- CSS3 (Tailwind CSS 辅助)
+- 原生 JavaScript (ES6+)
+
+## 🚀 快速开始
+只需在浏览器中打开 `index.html` 即可开始游戏。
+
+## 📄 开源协议
+本项目采用 [MIT License](LICENSE) 协议。
